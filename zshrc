@@ -86,10 +86,6 @@ source $ZSH/oh-my-zsh.sh
 alias inst="sudo apt-get install"
 alias up="sudo apt-get update && sudo apt-get upgrade"
 alias cc="clear"
-alias dati="cd /media/dati"
-alias m2="cd /media/m2dati"
-alias hacking="cd /media/m2dati/hacking"
-alias sdk="cd /media/m2dati/Android/Sdk/platform-tools"
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/surf/.vimpkg/bin
 
