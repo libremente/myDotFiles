@@ -44,5 +44,6 @@ autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1
 "Removing backup files
 set nobackup
 set nowritebackup
+set noundofile
 execute pathogen#infect()
 call pathogen#helptags()
