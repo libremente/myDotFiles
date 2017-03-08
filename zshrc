@@ -86,9 +86,10 @@ source $ZSH/oh-my-zsh.sh
 alias inst="sudo apt-get install"
 alias up="sudo apt-get update && sudo apt-get upgrade"
 alias cc="clear"
-alias cc="clear"
+alias pinga="ping www.google.it"
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/<user>/.vimpkg/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/surf/.vimpkg/bin
+PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # Inserting bindkeys
 bindkey "^[0C" forward-word
