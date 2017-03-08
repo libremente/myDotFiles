@@ -88,7 +88,7 @@ alias up="sudo apt-get update && sudo apt-get upgrade"
 alias cc="clear"
 alias pinga="ping www.google.it"
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/surf/.vimpkg/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/<user>/.vimpkg/bin
 PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # Inserting bindkeys
