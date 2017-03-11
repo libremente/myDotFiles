@@ -26,7 +26,8 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
+"set relativenumber
+set number
 set undofile
 
 "Long lines
