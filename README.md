@@ -1,4 +1,5 @@
-# Tree of the plugin section
+# VIM
+## Tree of the plugin section
 `tree ~/.vim/bundle -d -L 1`
 ```
 ├── nerdtree
@@ -10,6 +11,6 @@
 ├── vim-fugitive
 ├── vim-fullscreen
 ```
-# Tips & tricks
+## Tips & tricks
 1. To enable vim-fullscreen hit CTRL + ENTER in normal mode. Same to disable.
    Or hit `:FullScreenStart/Stop`
