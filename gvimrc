@@ -26,7 +26,6 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
 set undofile
 
 "Long lines
@@ -49,7 +48,7 @@ execute pathogen#infect()
 call pathogen#helptags()
 
 "Gui settings
-set guifont=Inconsolata\ 13
+set guifont=Hack\ 12
 colorscheme codeschool 
 let g:airline_theme='badwolf'
 let g:airline_powerline_fonts=1
