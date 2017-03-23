@@ -78,3 +78,31 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" Remap for navigating buffers
+map gt :bn<cr>
+map gT :bp<cr>
+map gd :bd<cr>  
+
+" Colorscheme
+colorscheme railscasts
+" Setting mapleader
+let mapleader = "\<Space>"
+
+" Trying remapping
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+
+" Copy paste to clipboard
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
