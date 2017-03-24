@@ -91,8 +91,9 @@ map gT :bp<cr>
 map gd :bd<cr>  
 
 " Colorscheme
-" colorscheme gruvbox " Cool but not enabled for now
-colorscheme railscasts
+colorscheme gruvbox " Cool but not enabled for now
+set background=dark
+"colorscheme railscasts
 
 " Setting mapleader
 let mapleader = "\<Space>"
