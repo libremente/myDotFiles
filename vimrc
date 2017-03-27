@@ -93,6 +93,7 @@ map gd :bd<cr>
 " Colorscheme
 colorscheme gruvbox " Cool but not enabled for now
 set background=dark
+let g:airline_theme='wombat'
 "colorscheme railscasts
 
 " Setting mapleader
@@ -101,6 +102,7 @@ let mapleader = "\<Space>"
 " Trying remapping
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :bd<CR>
+nnoremap <Leader>e :NERDTree<CR>
 
 " Copy paste to clipboard
 vmap <Leader>y "+y
@@ -108,7 +110,6 @@ vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
-vmap <Leader>P "+P
 
 " Quit NERDTree on open
 let NERDTreeQuitOnOpen=1
