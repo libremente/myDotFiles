@@ -41,6 +41,12 @@ syntax on
 
 "Adding execute python with F9 when filetype is python
 autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+" F4 to vimgrep word under cursor in all the files of the current dir and
+" subdirs with the same extension
+map <F4> :execute "noautocmd vimgrep /" . expand("<cword>") . "/gj **/*." .  expand("%:e") <Bar> cw<CR>
+" F3 to vimgrep word under cursor in all the files of the current dir and
+" subdirs
+map <F3> :execute "noautocmd vimgrep /" . expand("<cword>") . "/gj **/*" <Bar> cw<CR>
 
 "Removing backup files
 set nobackup
@@ -103,6 +109,8 @@ let mapleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :bd<CR>
 nnoremap <Leader>e :NERDTree<CR>
+" Add easy buffer switching
+nnoremap <Leader>b :ls<CR>:b<Space>
 
 " Copy paste to clipboard
 vmap <Leader>y "+y
@@ -114,3 +122,12 @@ vmap <Leader>P +P
 
 " Quit NERDTree on open
 let NERDTreeQuitOnOpen=1
+
+" Add vimux
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vz :VimuxZoomRunner<CR>
+
+" Add quickfix
+map <Leader>c :copen<CR>
+
