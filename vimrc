@@ -142,3 +142,13 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " Add for compatibility reason between YCM and Syntastic
 let g:ycm_show_diagnostics_ui = 0
+
+" Adding zfz
+set rtp+=~/.fzf
+map <Leader>f :FZF<CR>
+
+" Quick movement between splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
